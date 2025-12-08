@@ -20,7 +20,7 @@ void solve() {
             mx = max(mx, prod);
         }
     }
-    cout << mx << '\n';
+    cout << mx;
 }
 
 int main() {
