@@ -9,9 +9,8 @@ using u128 = unsigned __int128;
 
 #define all(x) (x).begin(), (x).end()
 
-constexpr int n = 100;
-
 void solve() {
+    constexpr int n = 100;
     int s = (n * (n + 1)) / 2;
     int s2 = (n * (n + 1) * (2 * n + 1)) / 6;
     cout << s * s - s2 << '\n';
