@@ -9,9 +9,8 @@ using u128 = unsigned __int128;
 
 #define all(x) (x).begin(), (x).end()
 
-constexpr int n = 4000000;
-
 void solve() {
+    constexpr int n = 4000000;
     int a = 0, b = 1, sum = a + b;
     ll ans = 0;
     while (sum <= n) {
