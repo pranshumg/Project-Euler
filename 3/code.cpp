@@ -9,9 +9,7 @@ using u128 = unsigned __int128;
 
 #define all(x) (x).begin(), (x).end()
 
-ll n = 600851475143;
-
-ll largest_prime_factor() {
+ll largest_prime_factor(ll n) {
     ll mx = LLONG_MIN;
     for (ll i = 2; i * i <= n; ++i) {
         if (n % i == 0) {
@@ -28,7 +26,8 @@ ll largest_prime_factor() {
 }
 
 void solve() {
-    ll ans = largest_prime_factor();
+    ll n = 600851475143;
+    ll ans = largest_prime_factor(n);
     cout << ans << '\n';
 }
 
