@@ -10,9 +10,8 @@ using u128 = unsigned __int128;
 
 #define all(x) (x).begin(), (x).end()
 
-constexpr int n = 100;
-
 void solve() {
+    constexpr int n = 100;
 	string s = "1";
     for (int i = 2; i <= n; ++i) {
 		int carry = 0;
