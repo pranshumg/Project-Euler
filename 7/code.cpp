@@ -9,7 +9,6 @@ using u128 = unsigned __int128;
 
 #define all(x) (x).begin(), (x).end()
 
-constexpr int n = 10001;
 
 bool is_prime(int x) {
     int cnt = 0;
@@ -28,6 +27,7 @@ bool is_prime(int x) {
 }
 
 void solve() {
+    constexpr int n = 10001;
     int x = 1, cnt = 0;
     while (true) {
         if (is_prime(x)) {
