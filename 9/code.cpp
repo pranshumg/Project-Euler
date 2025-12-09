@@ -10,9 +10,8 @@ using u128 = unsigned __int128;
 
 #define all(x) (x).begin(), (x).end()
 
-constexpr int n = 1000;
-
 void solve() {
+    constexpr int n = 1000;
     for (int a = 1; a <= n; ++a) {
     	for (int b = a + 1; b <= n; ++b) {
     		for (int c = b + 1; c <= n; ++c) {
