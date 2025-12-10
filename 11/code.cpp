@@ -35,26 +35,17 @@ vector<vector<int>> v = {
 
 void solve() {
 	int ans = 0;
-	// left -> right
+	// left -> right and up -> down
 	for (int i = 0; i < (int)v.size(); ++i) {
 		for (int j = i; j < (int)v.size() - 3; ++j) {
-			int prod = 1;
+			int lr = 1, ud = 1;
 			for (int k = j; k < j + 4; ++k) {
-				prod *= v[i][k];
+				lr *= v[i][k];
+				ud *= v[k][i];
 			}
-			ans = max(ans, prod);
+			ans = max(ans, max(lr, ud));
 		}
 	}    
-	// up -> down;
-	for (int j = 0; j < (int)v.size(); ++j) {
-		for (int i = j; i < (int)v.size() - 3; ++i) {
-			int prod = 1;
-			for (int k = i; k < i + 4; ++k) {
-				prod *= v[k][j];
-			}
-			ans = max(ans, prod);
-		}
-	}
 	// diagnols 
 	for (int i = 3; i < (int)v.size(); ++i) {
 		int x = 0;
