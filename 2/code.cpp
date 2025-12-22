@@ -13,7 +13,7 @@ using u128 = unsigned __int128;
 void solve() {
     constexpr int n = 4000000;
     int a = 0, b = 1, sum = a + b;
-    ll ans = 0;
+    i64 ans = 0;
     while (sum <= n) {
         if (!(sum & 1)) {
             ans += sum;
