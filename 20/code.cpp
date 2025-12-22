@@ -2,9 +2,9 @@
 
 using namespace std;
 
-using ll = long long;
-using ull = unsigned long long;
-using u32 = unsigned;
+using i64 = int64_t;
+using u64 = uint64_t;
+using u32 = uint32_t;
 using i128 = __int128;
 using u128 = unsigned __int128;
 
@@ -25,7 +25,7 @@ void solve() {
 			carry /= 10;
 		}
     }
-    ll ans = 0;
+    i64 ans = 0;
     for (auto &it : s) {
     	ans += it - '0';
     }
