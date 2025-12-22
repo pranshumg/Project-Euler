@@ -2,16 +2,17 @@
 
 using namespace std;
 
-using ll = long long;
-using ull = unsigned long long;
+using i64 = int64_t;
+using u64 = uint64_t;
+using u32 = uint32_t;
 using i128 = __int128;
 using u128 = unsigned __int128;
 
 #define all(x) (x).begin(), (x).end()
 
-ll largest_prime_factor(ll n) {
-    ll mx = LLONG_MIN;
-    for (ll i = 2; i * i <= n; ++i) {
+i64 largest_prime_factor(i64 n) {
+    i64 mx = LLONG_MIN;
+    for (i64 i = 2; i * i <= n; ++i) {
         if (n % i == 0) {
             mx = max(mx, i);
             while (n % i == 0) {
@@ -26,8 +27,8 @@ ll largest_prime_factor(ll n) {
 }
 
 void solve() {
-    ll n = 600851475143;
-    ll ans = largest_prime_factor(n);
+    i64 n = 600851475143;
+    i64 ans = largest_prime_factor(n);
     cout << ans << '\n';
 }
 
