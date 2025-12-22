@@ -10,7 +10,6 @@ using u128 = unsigned __int128;
 
 #define all(x) (x).begin(), (x).end()
 
-
 bool is_prime(int x) {
     int cnt = 0;
     for (int i = 1; i * i <= x; ++i) {
